@@ -201,7 +201,7 @@ function App() {
         </div>
       ) : (
         <div style={{ width: "100%", height: "100%", background: "#fff" }}>
-          <Parallax pages={3}>
+          <Parallax pages={3.5}>
             <ParallaxLayer
               offset={0}
               speed={0}
@@ -247,7 +247,7 @@ function App() {
               speed={0.5}
               // onClick={() => parallax.current.scrollTo(1)}
               style={{
-                top: "-471px",
+                top: "-371px",
               }}
             >
               <TextAnimation />

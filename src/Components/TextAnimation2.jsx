@@ -2,13 +2,21 @@ import React, { useEffect } from "react";
 
 export default function TextAnimation2() {
   return (
-    <section className="textSection">
-      <div className="text2">
-        <h1>
+    <section className="textSection animate__animated animate__fadeInUpBig">
+      <div className="textAniSection">
+        <p className="animate__animated animate__fadeInLeftBig animate__delay-2s">
           ITS TIME TO
-          <br /> MAKE A<br />
+        </p>
+        <br />
+        <p className="animate__animated animate__fadeInLeftBig animate__delay-3s">
+          MAKE A
+        </p>
+        <br />
+        <p className="animate__animated animate__fadeInLeftBig animate__delay-4s">
           DIFFERENCE
-        </h1>
+        </p>
+        {/* <br /> <br />
+          DIFFERENCE */}
       </div>
     </section>
   );

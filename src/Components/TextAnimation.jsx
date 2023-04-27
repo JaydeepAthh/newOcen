@@ -1,17 +1,7 @@
 import React, { useEffect, useState, useRef } from "react";
 import TextAnimation2 from "./TextAnimation2";
 import styles from "../assets/styles/Home.module.css";
-
-import { Parallax, ParallaxLayer } from "@react-spring/parallax";
-
-const textStyles = {
-  // opacity: 1,
-  animation: `${styles.textAnimation} 3s cubic-bezier(0.25, 0.1, 0.25, 1) forwards`,
-  animationIterationCount: "infinite",
-  animationDirection: "normal",
-  animationTimingFunction: "cubic-bezier(0.4, 0, 0.2, 1)",
-  animationDelay: "2s",
-};
+import "animate.css";
 
 export default function TextAnimation() {
   const [isVisible, setIsVisible] = useState(false);
@@ -37,30 +27,37 @@ export default function TextAnimation() {
       });
     });
     observertext.observe(sectionRef.current);
-  }, []);
 
-  useEffect(() => {
-    const observertext = new window.IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("showtext");
-        }
-      });
+    const observer = new IntersectionObserver((entries) => {
+      if (entries[0].isIntersecting) {
+        sectionRef.current.classList.add(
+          "animate__animated",
+          "animate__fadeInUp"
+        );
+      } else {
+        sectionRef.current.classList.remove(
+          "animate__animated",
+          "animate__fadeInUp"
+        );
+      }
     });
-    const hiddenText = document.querySelectorAll(".text h1");
-    hiddenText.forEach((el) => observertext.observe(el));
-  });
+    observer.observe(sectionRef.current);
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
 
   // console.log(isVisible);
   return (
     <>
-      <div className="text" ref={sectionRef}>
+      <div className="textos" ref={sectionRef}>
         {isVisible === false ? (
           <h1>
             THE OCEANS <br /> NEED YOUR <br /> HELP
           </h1>
         ) : (
-          <div className={textStyles}>
+          <div className="">
             <TextAnimation2 />
           </div>
         )}
