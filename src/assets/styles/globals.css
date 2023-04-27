@@ -1154,16 +1154,9 @@ nav.nav-button {
   transform-style: preserve-3d;
 }
 
-.text2 .showtext {
+/* .text2 .showtext {
   background-color: white;
-}
-
-.text2 .showtext h1 {
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-attachment: fixed;
-  background-image: url(../public/4.webp);
-}
+} */
 
 .textSection {
   width: 100%;
@@ -1173,9 +1166,9 @@ nav.nav-button {
   align-items: center;
 }
 
-/* .text2 {
+.text2 {
   text-align: left;
-} */
+}
 
 .text2 h1 {
   font-style: normal;
@@ -1191,6 +1184,13 @@ nav.nav-button {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-attachment: fixed; */
+}
+
+.showtext h1 {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-attachment: fixed;
+  background-image: url(../public/4.webp);
 }
 
 ::-webkit-scrollbar {

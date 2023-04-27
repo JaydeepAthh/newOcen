@@ -65,12 +65,6 @@ export default function TextAnimation() {
           </div>
         )}
       </div>
-
-      {/* <div className="textAniCon">
-        <h1>
-          THE OCEANS <br /> NEED YOUR <br /> HELP
-        </h1>
-      </div> */}
     </>
   );
 }
