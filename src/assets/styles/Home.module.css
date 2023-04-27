@@ -1,0 +1,32 @@
+.container {
+  background-color: rgb(255, 255, 255);
+}
+
+.loaderMove {
+  animation-name: loaderMove;
+}
+
+@keyframes loaderMove {
+  from {
+    transform: translateX(0%);
+  }
+
+  to {
+    transform: translateX(-150%);
+    /* opacity: 0; */
+  }
+}
+
+.textAnimation {
+  animation-name: textMove;
+}
+
+@keyframes textMove {
+  from {
+    transform: translateY(-150%);
+  }
+
+  to {
+    transform: translateX(0%);
+  }
+}
