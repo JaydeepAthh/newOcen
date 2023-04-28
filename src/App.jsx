@@ -1,5 +1,6 @@
 import normalizeWheel from "normalize-wheel";
 import { useState, useRef, useEffect } from "react";
+
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import bg from "./assets/public/1.webp";
@@ -36,6 +37,7 @@ function App() {
   const [isVisible, setIsVisible] = useState(false);
   const [isVisible2, setIsVisible2] = useState(false);
   const [textAnimation, setTextAnimation] = useState(false);
+  const [show, setShow] = useState(false);
   const ref = useRef(null);
   const [isHorizontalScrollingComplete, setIsHorizontalScrollingComplete] =
     useState(false);
@@ -192,6 +194,8 @@ function App() {
     document.addEventListener("mousewheel", handleWheel, true);
   }, []);
 
+  console.log(window.screenY);
+
   return (
     <div className="container">
       {loading ? (
@@ -204,6 +208,7 @@ function App() {
         <div style={{ width: "100%", height: "100%", background: "#fff" }}>
           <Parallax pages={5}>
             <ParallaxLayer
+              className={`kaipan ${show ? "aavigyu" : ""}`}
               offset={0}
               speed={0}
               factor={3}
@@ -251,7 +256,7 @@ function App() {
                 top: "-371px",
               }}
             >
-              <TextAnimation />
+              <TextAnimation2 />
             </ParallaxLayer>
             <ParallaxLayer offset={3} speed={0.5}>
               <div

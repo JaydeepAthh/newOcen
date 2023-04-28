@@ -73,24 +73,30 @@
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 
-  --primary-glow: conic-gradient(from 180deg at 50% 50%,
-      #16abff33 0deg,
-      #0885ff33 55deg,
-      #54d6ff33 120deg,
-      #0071ff33 160deg,
-      transparent 360deg);
-  --secondary-glow: radial-gradient(rgba(255, 255, 255, 1),
-      rgba(255, 255, 255, 0));
+  --primary-glow: conic-gradient(
+    from 180deg at 50% 50%,
+    #16abff33 0deg,
+    #0885ff33 55deg,
+    #54d6ff33 120deg,
+    #0071ff33 160deg,
+    transparent 360deg
+  );
+  --secondary-glow: radial-gradient(
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0)
+  );
 
   --tile-start-rgb: 239, 245, 249;
   --tile-end-rgb: 228, 232, 233;
-  --tile-border: conic-gradient(#00000080,
-      #00000040,
-      #00000030,
-      #00000020,
-      #00000010,
-      #00000010,
-      #00000080);
+  --tile-border: conic-gradient(
+    #00000080,
+    #00000040,
+    #00000030,
+    #00000020,
+    #00000010,
+    #00000010,
+    #00000080
+  );
 
   --callout-rgb: 238, 240, 241;
   --callout-border-rgb: 172, 175, 176;
@@ -105,20 +111,24 @@
     --background-end-rgb: 0, 0, 0;
 
     --primary-glow: radial-gradient(rgba(1, 65, 255, 0.4), rgba(1, 65, 255, 0));
-    --secondary-glow: linear-gradient(to bottom right,
-        rgba(1, 65, 255, 0),
-        rgba(1, 65, 255, 0),
-        rgba(1, 65, 255, 0.3));
+    --secondary-glow: linear-gradient(
+      to bottom right,
+      rgba(1, 65, 255, 0),
+      rgba(1, 65, 255, 0),
+      rgba(1, 65, 255, 0.3)
+    );
 
     --tile-start-rgb: 2, 13, 46;
     --tile-end-rgb: 2, 5, 19;
-    --tile-border: conic-gradient(#ffffff80,
-        #ffffff40,
-        #ffffff30,
-        #ffffff20,
-        #ffffff10,
-        #ffffff10,
-        #ffffff80);
+    --tile-border: conic-gradient(
+      #ffffff80,
+      #ffffff40,
+      #ffffff30,
+      #ffffff20,
+      #ffffff10,
+      #ffffff10,
+      #ffffff80
+    );
 
     --callout-rgb: 20, 20, 20;
     --callout-border-rgb: 108, 108, 108;
@@ -263,89 +273,113 @@ a {
   z-index: 5;
 }
 
-.main input[value="1"]:checked~#site {
+.main input[value="1"]:checked ~ #site {
   --scene: 1;
 }
 
-.main input[value="2"]:checked~#site {
+.main input[value="2"]:checked ~ #site {
   --scene: 2;
 }
 
-.main input[value="3"]:checked~#site {
+.main input[value="3"]:checked ~ #site {
   --scene: 3;
 }
 
-.main input[value="4"]:checked~#site {
+.main input[value="4"]:checked ~ #site {
   --scene: 4;
 }
 
-.main input[value="5"]:checked~#site {
+.main input[value="5"]:checked ~ #site {
   --scene: 5;
 }
 
-.main input[value="6"]:checked~#site {
+.main input[value="6"]:checked ~ #site {
   --scene: 6;
 }
 
-.main input[value="1"]:checked~* [data-scene]:not([data-scene="1"]),
-.main input[value="2"]:checked~* [data-scene]:not([data-scene="2"]),
-.main input[value="3"]:checked~* [data-scene]:not([data-scene="3"]),
-.main input[value="4"]:checked~* [data-scene]:not([data-scene="4"]),
-.main input[value="5"]:checked~* [data-scene]:not([data-scene="5"]),
-.main input[value="6"]:checked~* [data-scene]:not([data-scene="6"]) {
+.main input[value="1"]:checked ~ * [data-scene]:not([data-scene="1"]),
+.main input[value="2"]:checked ~ * [data-scene]:not([data-scene="2"]),
+.main input[value="3"]:checked ~ * [data-scene]:not([data-scene="3"]),
+.main input[value="4"]:checked ~ * [data-scene]:not([data-scene="4"]),
+.main input[value="5"]:checked ~ * [data-scene]:not([data-scene="5"]),
+.main input[value="6"]:checked ~ * [data-scene]:not([data-scene="6"]) {
   pointer-events: none;
 }
 
-.main input[value="1"]:checked~* [data-scene]:not([data-scene="1"]) .heading,
-.main input[value="1"]:checked~* [data-scene]:not([data-scene="1"]) .paragraph,
-.main input[value="1"]:checked~* [data-scene]:not([data-scene="1"]) .fact,
-.main input[value="2"]:checked~* [data-scene]:not([data-scene="2"]) .heading,
-.main input[value="2"]:checked~* [data-scene]:not([data-scene="2"]) .paragraph,
-.main input[value="2"]:checked~* [data-scene]:not([data-scene="2"]) .fact,
-.main input[value="3"]:checked~* [data-scene]:not([data-scene="3"]) .heading,
-.main input[value="3"]:checked~* [data-scene]:not([data-scene="3"]) .paragraph,
-.main input[value="3"]:checked~* [data-scene]:not([data-scene="3"]) .fact,
-.main input[value="4"]:checked~* [data-scene]:not([data-scene="4"]) .heading,
-.main input[value="4"]:checked~* [data-scene]:not([data-scene="4"]) .paragraph,
-.main input[value="4"]:checked~* [data-scene]:not([data-scene="4"]) .fact,
-.main input[value="5"]:checked~* [data-scene]:not([data-scene="5"]) .heading,
-.main input[value="5"]:checked~* [data-scene]:not([data-scene="5"]) .paragraph,
-.main input[value="5"]:checked~* [data-scene]:not([data-scene="5"]) .fact,
-.main input[value="6"]:checked~* [data-scene]:not([data-scene="6"]) .heading,
-.main input[value="6"]:checked~* [data-scene]:not([data-scene="6"]) .paragraph,
-.main input[value="6"]:checked~* [data-scene]:not([data-scene="6"]) .fact {
+.main input[value="1"]:checked ~ * [data-scene]:not([data-scene="1"]) .heading,
+.main
+  input[value="1"]:checked
+  ~ *
+  [data-scene]:not([data-scene="1"])
+  .paragraph,
+.main input[value="1"]:checked ~ * [data-scene]:not([data-scene="1"]) .fact,
+.main input[value="2"]:checked ~ * [data-scene]:not([data-scene="2"]) .heading,
+.main
+  input[value="2"]:checked
+  ~ *
+  [data-scene]:not([data-scene="2"])
+  .paragraph,
+.main input[value="2"]:checked ~ * [data-scene]:not([data-scene="2"]) .fact,
+.main input[value="3"]:checked ~ * [data-scene]:not([data-scene="3"]) .heading,
+.main
+  input[value="3"]:checked
+  ~ *
+  [data-scene]:not([data-scene="3"])
+  .paragraph,
+.main input[value="3"]:checked ~ * [data-scene]:not([data-scene="3"]) .fact,
+.main input[value="4"]:checked ~ * [data-scene]:not([data-scene="4"]) .heading,
+.main
+  input[value="4"]:checked
+  ~ *
+  [data-scene]:not([data-scene="4"])
+  .paragraph,
+.main input[value="4"]:checked ~ * [data-scene]:not([data-scene="4"]) .fact,
+.main input[value="5"]:checked ~ * [data-scene]:not([data-scene="5"]) .heading,
+.main
+  input[value="5"]:checked
+  ~ *
+  [data-scene]:not([data-scene="5"])
+  .paragraph,
+.main input[value="5"]:checked ~ * [data-scene]:not([data-scene="5"]) .fact,
+.main input[value="6"]:checked ~ * [data-scene]:not([data-scene="6"]) .heading,
+.main
+  input[value="6"]:checked
+  ~ *
+  [data-scene]:not([data-scene="6"])
+  .paragraph,
+.main input[value="6"]:checked ~ * [data-scene]:not([data-scene="6"]) .fact {
   transform: translateX(-25%);
   opacity: 0;
 }
 
-.main input[value="1"]:checked~* [data-scene="1"]+[data-scene] .heading,
-.main input[value="1"]:checked~* [data-scene="1"]+[data-scene] .paragraph,
-.main input[value="1"]:checked~* [data-scene="1"]+[data-scene] .fact,
-.main input[value="2"]:checked~* [data-scene="2"]+[data-scene] .heading,
-.main input[value="2"]:checked~* [data-scene="2"]+[data-scene] .paragraph,
-.main input[value="2"]:checked~* [data-scene="2"]+[data-scene] .fact,
-.main input[value="3"]:checked~* [data-scene="3"]+[data-scene] .heading,
-.main input[value="3"]:checked~* [data-scene="3"]+[data-scene] .paragraph,
-.main input[value="3"]:checked~* [data-scene="3"]+[data-scene] .fact,
-.main input[value="4"]:checked~* [data-scene="4"]+[data-scene] .heading,
-.main input[value="4"]:checked~* [data-scene="4"]+[data-scene] .paragraph,
-.main input[value="4"]:checked~* [data-scene="4"]+[data-scene] .fact,
-.main input[value="5"]:checked~* [data-scene="5"]+[data-scene] .heading,
-.main input[value="5"]:checked~* [data-scene="5"]+[data-scene] .paragraph,
-.main input[value="5"]:checked~* [data-scene="5"]+[data-scene] .fact,
-.main input[value="6"]:checked~* [data-scene="6"]+[data-scene] .heading,
-.main input[value="6"]:checked~* [data-scene="6"]+[data-scene] .paragraph,
-.main input[value="6"]:checked~* [data-scene="6"]+[data-scene] .fact {
+.main input[value="1"]:checked ~ * [data-scene="1"] + [data-scene] .heading,
+.main input[value="1"]:checked ~ * [data-scene="1"] + [data-scene] .paragraph,
+.main input[value="1"]:checked ~ * [data-scene="1"] + [data-scene] .fact,
+.main input[value="2"]:checked ~ * [data-scene="2"] + [data-scene] .heading,
+.main input[value="2"]:checked ~ * [data-scene="2"] + [data-scene] .paragraph,
+.main input[value="2"]:checked ~ * [data-scene="2"] + [data-scene] .fact,
+.main input[value="3"]:checked ~ * [data-scene="3"] + [data-scene] .heading,
+.main input[value="3"]:checked ~ * [data-scene="3"] + [data-scene] .paragraph,
+.main input[value="3"]:checked ~ * [data-scene="3"] + [data-scene] .fact,
+.main input[value="4"]:checked ~ * [data-scene="4"] + [data-scene] .heading,
+.main input[value="4"]:checked ~ * [data-scene="4"] + [data-scene] .paragraph,
+.main input[value="4"]:checked ~ * [data-scene="4"] + [data-scene] .fact,
+.main input[value="5"]:checked ~ * [data-scene="5"] + [data-scene] .heading,
+.main input[value="5"]:checked ~ * [data-scene="5"] + [data-scene] .paragraph,
+.main input[value="5"]:checked ~ * [data-scene="5"] + [data-scene] .fact,
+.main input[value="6"]:checked ~ * [data-scene="6"] + [data-scene] .heading,
+.main input[value="6"]:checked ~ * [data-scene="6"] + [data-scene] .paragraph,
+.main input[value="6"]:checked ~ * [data-scene="6"] + [data-scene] .fact {
   transform: translateX(25%);
 }
 
-.main input[value="1"]:checked~* .ocean,
-.main input[value="2"]:checked~* .ocean {
+.main input[value="1"]:checked ~ * .ocean,
+.main input[value="2"]:checked ~ * .ocean {
   background: transparent;
 }
 
-.main input[value="3"]:checked~* .ocean,
-.main input[value="4"]:checked~* .ocean {
+.main input[value="3"]:checked ~ * .ocean,
+.main input[value="4"]:checked ~ * .ocean {
   background-image: url("../public/2.webp");
   /* background-color: white; */
 }
@@ -400,12 +434,12 @@ nav.nav-button {
   bottom: 0;
 }
 
-.main input[value="2"]:checked~* .ocean-text {
+.main input[value="2"]:checked ~ * .ocean-text {
   background-position: 101% 78%;
   /* background-position: calc(180% + (-100% * var(--percentage))); */
 }
 
-.main input[value="4"]:checked~* .ocean-text {
+.main input[value="4"]:checked ~ * .ocean-text {
   background-position: 101% 78%;
   /* background-position: calc(180% + (-100% * var(--percentage))); */
 }
@@ -569,33 +603,33 @@ nav.nav-button {
   align-items: flex-start;
 }
 
-.main .left-content .layer>.subtitle,
-.main .left-content .layer2>.subtitle {
+.main .left-content .layer > .subtitle,
+.main .left-content .layer2 > .subtitle {
   font-weight: 500;
   font-size: 18px !important;
   color: black;
 }
 
-.main .left-content .layer>.subtitle,
-.left-content .layer>.description,
-.main .left-content .layer2>.subtitle,
-.left-content .layer2>.description {
+.main .left-content .layer > .subtitle,
+.left-content .layer > .description,
+.main .left-content .layer2 > .subtitle,
+.left-content .layer2 > .description {
   font-size: 18px !important;
   font-weight: 500;
 }
 
-.main .left-content .layer>.subtitle span,
-.left-content .layer>.number span,
-.main .left-content .layer2>.subtitle span,
-.left-content .layer2>.number span {
+.main .left-content .layer > .subtitle span,
+.left-content .layer > .number span,
+.main .left-content .layer2 > .subtitle span,
+.left-content .layer2 > .number span {
   font-size: 25px;
   font-weight: 600;
   letter-spacing: -1px;
   padding: 0 5px;
 }
 
-.main .left-content .layer>.number,
-.main .left-content .layer2>.number {
+.main .left-content .layer > .number,
+.main .left-content .layer2 > .number {
   font-size: 18px;
   font-weight: 500;
   letter-spacing: -1px;
@@ -606,22 +640,22 @@ nav.nav-button {
   grid-column: 3/-1;
 }
 
-.main .right-content>.layer {
+.main .right-content > .layer {
   padding: 3rem 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.main .right-content>.layer2 {
+.main .right-content > .layer2 {
   padding: 3rem 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.main .right-content>.layer>.heading,
-.main .right-content>.layer2>.heading {
+.main .right-content > .layer > .heading,
+.main .right-content > .layer2 > .heading {
   margin: 0;
   font-size: 1rem;
   color: black;
@@ -686,16 +720,30 @@ nav.nav-button {
   z-index: 1;
 }
 
-.main input[value="1"]:checked~* .-next .nav-toggle:not([for="scene-2"]),
-.main input[value="2"]:checked~* .-next .nav-toggle:not([for="scene-3"]),
-.main input[value="3"]:checked~* .-next .nav-toggle:not([for="scene-4"]),
-.main input[value="4"]:checked~* .-next .nav-toggle:not([for="scene-5"]),
-.main input[value="5"]:checked~* .-next .nav-toggle:not([for="scene-6"]),
-.main input[value="6"]:checked~* .-next .nav-toggle:not([for="scene-1"]),
-.main input[value="5"]:checked~* .-prev .nav-toggle:not([for="scene-4"]),
-.main input[value="2"]:checked~* .-prev .nav-toggle:not([for="scene-1"]),
-.main input[value="3"]:checked~* .-prev .nav-toggle:not([for="scene-2"]),
-.main input[value="4"]:checked~* .-prev .nav-toggle:not([for="scene-3"]) .main input[value="6"]:checked~* .-prev .nav-toggle:not([for="scene-5"]) .main input[value="1"]:checked~* .-prev .nav-toggle:not([for="scene-6"]) {
+.main input[value="1"]:checked ~ * .-next .nav-toggle:not([for="scene-2"]),
+.main input[value="2"]:checked ~ * .-next .nav-toggle:not([for="scene-3"]),
+.main input[value="3"]:checked ~ * .-next .nav-toggle:not([for="scene-4"]),
+.main input[value="4"]:checked ~ * .-next .nav-toggle:not([for="scene-5"]),
+.main input[value="5"]:checked ~ * .-next .nav-toggle:not([for="scene-6"]),
+.main input[value="6"]:checked ~ * .-next .nav-toggle:not([for="scene-1"]),
+.main input[value="5"]:checked ~ * .-prev .nav-toggle:not([for="scene-4"]),
+.main input[value="2"]:checked ~ * .-prev .nav-toggle:not([for="scene-1"]),
+.main input[value="3"]:checked ~ * .-prev .nav-toggle:not([for="scene-2"]),
+.main
+  input[value="4"]:checked
+  ~ *
+  .-prev
+  .nav-toggle:not([for="scene-3"])
+  .main
+  input[value="6"]:checked
+  ~ *
+  .-prev
+  .nav-toggle:not([for="scene-5"])
+  .main
+  input[value="1"]:checked
+  ~ *
+  .-prev
+  .nav-toggle:not([for="scene-6"]) {
   transform: translateX(100%);
   z-index: 3;
   transition-delay: 0.5s !important;
@@ -757,7 +805,9 @@ nav.nav-button {
 }
 
 .page-number.-ones {
-  transform: translateY(calc((var(--total) - var(--scene)) * (100% / var(--total))));
+  transform: translateY(
+    calc((var(--total) - var(--scene)) * (100% / var(--total)))
+  );
 }
 
 .main .hero {
@@ -766,8 +816,8 @@ nav.nav-button {
   color: #fff;
 }
 
-.main .hero>.layer,
-.main .hero>.layer2 {
+.main .hero > .layer,
+.main .hero > .layer2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1096,7 +1146,6 @@ nav.nav-button {
   padding: 2vw;
   padding-top: 15vh;
   color: white;
-
 }
 
 /* .text .showtext {
@@ -1104,7 +1153,6 @@ nav.nav-button {
   transform: translate3d(0px, 0px, 0px);
   transform-style: preserve-3d;
 } */
-
 
 .textSection {
   width: 100%;
@@ -1127,18 +1175,27 @@ nav.nav-button {
 .textAniSection p {
   padding: 0px 20px 0px 0px;
   font-style: normal;
-  /* margin-top: 50px; */
   font-weight: 900;
   font-size: 10vw;
-  /* line-height: 10vw; */
-  /* padding: 2vw; */
-  /* padding-top: 15vh; */
   white-space: nowrap;
   text-transform: uppercase;
   background-image: url("../public/4.webp");
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-attachment: fixed;
+}
+
+.textClip {
+  font-size: 20em;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-size: cover;
+  background-image: url("https://images.unsplash.com/photo-1501854140801-50d01698950b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bmF0dXJlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60") !important;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-attachment: fixed;
+  transition: all 0.35s linear;
 }
 
 /* 
@@ -1205,7 +1262,8 @@ nav.nav-button {
   display: flex;
   min-height: 45vh;
   transform-origin: 50% 50%;
-  transform: rotate(90deg) translateZ(0.1px) scale(0.9) translateX(0px) translateY(-3vh);
+  transform: rotate(90deg) translateZ(0.1px) scale(0.9) translateX(0px)
+    translateY(-3vh);
   transition: 1s;
   z-index: 10000;
 }
@@ -1253,7 +1311,8 @@ nav.nav-button {
 }
 
 .external .slower {
-  transform: rotate(90deg) translateZ(-0.2px) scale(1.1) translateX(0%) translateY(-10vh);
+  transform: rotate(90deg) translateZ(-0.2px) scale(1.1) translateX(0%)
+    translateY(-10vh);
 }
 
 .external img {
@@ -1265,7 +1324,8 @@ nav.nav-button {
 }
 
 .external .img-wrapper:hover {
-  filter: brightness(80%) contrast(200%) saturate(20%) sepia(40%) hue-rotate(10deg);
+  filter: brightness(80%) contrast(200%) saturate(20%) sepia(40%)
+    hue-rotate(10deg);
 }
 
 .footer {
@@ -1492,8 +1552,8 @@ nav.nav-button {
     font-size: 5vw;
   }
 
-  .main .right-content>.layer>*,
-  .main .right-content>.layer2>* {
+  .main .right-content > .layer > *,
+  .main .right-content > .layer2 > * {
     padding: 0vw !important;
   }
 
@@ -1505,13 +1565,13 @@ nav.nav-button {
     -webkit-text-stroke: 0.4px black;
   }
 
-  .main .left-content.layer>*,
-  .main .left-content.layer2>* {
+  .main .left-content.layer > *,
+  .main .left-content.layer2 > * {
     padding: 0vw !important;
   }
 
-  .main .left-content .layer>.number,
-  .main .left-content .layer2>.number {
+  .main .left-content .layer > .number,
+  .main .left-content .layer2 > .number {
     font-size: 5.5vw !important;
     font-weight: 900;
   }

@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
+import { Parallax, Background } from "react-parallax";
 import TextAnimation2 from "./TextAnimation2";
 import styles from "../assets/styles/Home.module.css";
 import "animate.css";
@@ -58,7 +59,24 @@ export default function TextAnimation() {
           </h1>
         ) : (
           <div className="">
-            <TextAnimation2 />
+            <section className="textSection animate__animated animate__fadeInUpBig">
+              <TextAnimation2 />
+            </section>
+            {/* <section className="textSection animate__animated animate__fadeInUpBig">
+              <Parallax
+                strength={500}
+                renderLayer={(percentage) => (
+                  <div
+                    className="textClip"
+                    style={{
+                      backgroundPositionY: percentage * 220,
+                    }}
+                  >
+                    SCROLL
+                  </div>
+                )}
+              ></Parallax>
+            </section> */}
           </div>
         )}
       </div>
