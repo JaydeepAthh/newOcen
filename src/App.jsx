@@ -10,9 +10,10 @@ import HeroHeader from "./Components/HeroHeader";
 import MainAnimation from "./Components/MainAnimation";
 import "./assets/styles/globals.css";
 import styles from "./assets/styles/Home.module.css";
-import ScrollContainer from "react-scroll-horizontal";
 import TextAnimation from "./Components/TextAnimation";
 import TextAnimation2 from "./Components/TextAnimation2";
+import Doner from "./Components/Doner";
+import Mint from "./Components/Mint";
 
 const loaderStyles = {
   opacity: 1,
@@ -201,7 +202,7 @@ function App() {
         </div>
       ) : (
         <div style={{ width: "100%", height: "100%", background: "#fff" }}>
-          <Parallax pages={3.5}>
+          <Parallax pages={5}>
             <ParallaxLayer
               offset={0}
               speed={0}
@@ -252,13 +253,20 @@ function App() {
             >
               <TextAnimation />
             </ParallaxLayer>
-            {/* <ParallaxLayer
-              offset={2}
-              speed={0.5}
-              // onClick={() => parallax.current.scrollTo(1)}
-            >
-              
-            </ParallaxLayer> */}
+            <ParallaxLayer offset={3} speed={0.5}>
+              <div
+                className="scroll-wrapper"
+                id="scroll-wrapper"
+                style={{ background: "white" }}
+              >
+                <div className="mintcontainer">
+                  <Mint />
+                </div>
+                <div className="mintcontainer">
+                  <Doner />
+                </div>
+              </div>
+            </ParallaxLayer>
           </Parallax>
         </div>
       )}
