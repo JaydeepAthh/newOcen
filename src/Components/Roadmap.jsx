@@ -76,6 +76,7 @@ export default function Main(props) {
       className="main mainVisible nonResRoadMap"
       ref={ref}
       id="roadmap"
+      style={{ background: "white" }}
       onWheel={handleScroll}
     >
       <input type="radio" id="scene-5" defaultValue={5} checked={checked1} />

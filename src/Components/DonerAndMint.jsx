@@ -34,8 +34,9 @@ const DonerAndMint = () => {
   });
 
   return (
-    <div className="conditionalWrapper" ref={triggerRef}>
-      <div>
+    <>
+      <div className="conditionalWrapper" ref={triggerRef}>
+        {/* <div> */}
         <div ref={sectionRef} className="scroll-section-inner">
           <div className="mintcontainer">
             <div className="mint" id="mint">
@@ -84,7 +85,60 @@ const DonerAndMint = () => {
           </div>
         </div>
       </div>
-    </div>
+      {/* </div> */}
+      {/* 
+      <div className="conditionalWrapperRes">
+        <div>
+          <div className="scroll-section-inner">
+            <div className="mintcontainer">
+              <div className="mint" id="mint">
+                <div>
+                  <div>
+                    <h1 className="">INVEST IN</h1>
+                    <br />
+                    <h1 className="">SUSTAINABLE</h1>
+                    <br />
+                    <h1 className="nowrap">GLOBAL FISHERIES</h1>
+                  </div>
+                  <div className="mint_container ">
+                    <button className="btn">MINT</button>
+                    <p className="mint_text">
+                      We at the Frosty Narwhals care about the environment. From
+                      monthly donations, to beach clean ups, the Frosty Narwhals
+                      strive to make putting the world at the top of our
+                      priority list.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="mintcontainer">
+              <div className="mint donate" id="donate">
+                <div>
+                  <div>
+                    <h1 className="">DONATE IN</h1>
+                    <br />
+                    <h1 className="">SUSTAINABLE</h1>
+                    <br />
+                    <h1 className=" nowrap ">PROJECTS THAT CARE</h1>
+                  </div>
+                  <div className="mint_container">
+                    <button className="btn">Donate</button>
+                    <p className="mint_text">
+                      We at the Frosty Narwhals care about the environment. From
+                      monthly donations, to beach clean ups, the Frosty Narwhals
+                      strive to make putting the world at the top of our
+                      priority list.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> */}
+    </>
   );
 };
 

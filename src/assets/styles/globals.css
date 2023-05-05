@@ -1447,6 +1447,12 @@ nav.nav-button {
   overflow: hidden;
 }
 
+.conditionalWrapperRes {
+  display: none;
+  overflow-x: auto;
+  width: 100%
+}
+
 .scroll-section-inner {
   height: 100vh;
   width: 200%;
