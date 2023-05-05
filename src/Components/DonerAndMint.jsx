@@ -28,6 +28,9 @@ const DonerAndMint = () => {
         },
       }
     );
+    return () => {
+      pin.kill();
+    };
   });
 
   return (
