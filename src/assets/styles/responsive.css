@@ -1,0 +1,246 @@
+@media only screen and (max-width: 1300px) {
+  .mintBuyCon {
+    width: 80%;
+    margin-left: 5%;
+  }
+
+  .mintBuyCon .inputCon {
+    gap: 80px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mintBuyCon {
+    width: 95%;
+    margin-left: 2.5%;
+  }
+
+  .mintBuyCon .inputCon img {
+    width: 350px;
+    height: 350px;
+  }
+
+  .mintBuyCon .inputCon {
+    flex-direction: column-reverse;
+  }
+
+  .mintBuyCon .inputCon .input .innerInput {
+    align-items: flex-start;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .header .box .item {
+    display: none;
+  }
+
+  .HeroHeader .showtext {
+    font-size: 21vw;
+    line-height: 21vw;
+  }
+
+  .main .ocean-text1 {
+    transform: translateX(calc(75% + (-400% * var(--percentage) / 1.5)));
+  }
+
+  .main .ocean-text2 {
+    transform: translateX(calc(95% + (-180% * var(--percentage) / 1.5)));
+  }
+
+  .textos {
+    background-size: cover;
+    height: 60vh;
+  }
+
+  .textos h1 {
+    font-size: 12vw;
+    line-height: 12vw;
+    margin-right: 30px;
+  }
+
+  .text-clip {
+    font-size: 14vw;
+  }
+
+  .mint {
+    margin-left: 50px;
+  }
+
+  .mint h1 {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 70px;
+  }
+
+  .conditionalWrapper {
+    gap: 615px;
+  }
+
+  .team .team_details {
+    align-items: normal;
+  }
+
+  .team .details p {
+    font-size: 17px;
+  }
+
+
+  .nonResRoadMap {
+    display: none;
+  }
+
+  .resRoadmap {
+    display: block;
+  }
+
+  .main .ocean-text2 {
+    font-size: 40vh;
+    margin-top: 100px;
+  }
+
+  .main .ocean-text1 {
+    font-size: 40vh;
+    margin-top: 100px;
+  }
+
+  .theteam {
+    top: -240px;
+  }
+
+  .main .roadmap,
+  .main .roadmap {
+    background-image: url("../public/roadmap-small.png");
+  }
+
+  /* .main .roadmap-text1 {
+    font-size: 25vh;
+    margin-top: 270px;
+    transform: translateX(calc(340% + (-260% * var(--percentage) / 1)));
+  }
+
+  .main .roadmap-bottom .cards {
+    width: 100%;
+    justify-content: space-between;
+  } */
+}
+
+
+@media only screen and (max-width: 426px) {
+  .mintBuyCon {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .team .details {
+    width: 100%;
+  }
+
+  .team_details .img {
+    height: 250px !important;
+    width: 250px !important;
+  }
+
+  .mintBuyCon .inputCon .input .innerInput {
+    width: auto;
+  }
+
+  .mintBuyCon .inputCon {
+    align-items: center;
+  }
+
+  .HeroHeader .showtext {
+    font-size: 21vw;
+    line-height: 21vw;
+  }
+
+  .header .box .item {
+    display: none;
+  }
+
+  .main .ocean {
+    top: 90px;
+  }
+
+  .ocean-text1 {
+    transform: translateX(calc(75% + (-400% * var(--percentage) / 1.5))) !important;
+    font-size: 45vh;
+  }
+
+  .ocean-text1 {
+    font-size: 45vh;
+    transform: translateX(calc(95% + (-188% * var(--percentage) / 1.5)));
+  }
+
+  .textos {
+    background-size: cover;
+    height: 60vh;
+  }
+
+  .textos h1 {
+    font-size: 13vw;
+    line-height: 16vw;
+    margin-right: 30px;
+  }
+
+  .biggerTextos {
+    padding: 0;
+  }
+
+  .text-clip {
+    font-size: 11vw;
+  }
+
+  .page-02 {
+    height: 50vh;
+  }
+
+  .mint {
+    margin-left: 0;
+  }
+
+  .mint h1 {
+    font-size: 9vw;
+  }
+
+  .mint .mint_container {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 80px;
+  }
+
+  .mint .mint_container p {
+    margin-left: 0;
+  }
+
+  .main .roadmap-text1 {
+    transform: translateX(calc(340% + (-260% * var(--percentage) / 1)));
+  }
+
+  .main .hero .heading {
+    right: 30px;
+    top: 20px;
+  }
+
+  .main .roadmap-text1 {
+    font-size: 22vh;
+    margin-top: 340px;
+  }
+
+  .main .roadmap-bottom .cards {
+    width: 100%;
+  }
+
+  .mint h1 {
+    line-height: normal
+  }
+
+  .team {
+    height: auto;
+  }
+
+  .theteam {
+    top: -760px;
+    left: 9.75vw !important;
+  }
+}

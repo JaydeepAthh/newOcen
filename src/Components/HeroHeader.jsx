@@ -17,10 +17,12 @@ export default function HeroHeader() {
     });
   })
   return (
-        <div className='HeroHeader'>
-            <h1 id='text1'>WE CAN HELP</h1>
-            <br/>
-            <h1 id='text2'>SAVE THE OCEANS</h1>
-        </div>
+       <div>
+          <div className='HeroHeader'>
+              <h1 id='text1'>WE CAN HELP</h1>
+              <h1 id='text2'>SAVE THE OCEANS</h1>
+          </div>
+         
+       </div>
       )
 }

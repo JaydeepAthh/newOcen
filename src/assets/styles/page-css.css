@@ -1,0 +1,180 @@
+/* .page-01{
+  font-size: 5em;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-size: cover;
+  background-image: url("https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1064&q=80") !important;
+  background-attachment: fixed;
+  transition: all 0.35s linear;
+  height: 100vh;
+  color: #fff;
+  display: flex;  
+  align-items: center;
+  padding: 50px;
+}
+.page-02{
+  font-size: 5em;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-size: cover;
+  background-image: url("https://images.unsplash.com/photo-1604537529428-15bcbeecfe4d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80") !important;
+  background-attachment: fixed;
+  transition: all 0.35s linear;
+  height: 100vh;
+  color: #fff;
+  display: flex;  
+  align-items: center;
+  padding: 50px;
+}
+.textClip {
+  font-size: 20em;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-size: cover;
+  background-image: url("https://images.unsplash.com/photo-1501854140801-50d01698950b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bmF0dXJlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60") !important;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-attachment: fixed;
+  transition: all 0.35s linear;
+} */
+
+.HeroHeader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  width: 100vw;
+  height: 100vh;
+  /* background-image: url('../public/1.webp');
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+
+.HeroHeader h1 {
+  opacity: 0;
+  margin: 0;
+  transform: translate3d(0px, 100%, 0px);
+  transition-delay: 800ms;
+  transform-style: preserve-3d;
+  transition: all 2s cubic-bezier(0.25, 0.1, 0.25, 1);
+  font-style: normal;
+  font-weight: 900;
+  font-size: 9vw;
+  line-height: 10vw;
+  padding-left: 0.1vw;
+  padding-right: 0.1vw;
+  color: white;
+  -webkit-text-stroke: 0.4px black;
+}
+
+.HeroHeader .showtext {
+  opacity: 1;
+  transform: translate3d(0px, 0px, 0px);
+  background-position: calc(-100%) 0;
+  transform-style: preserve-3d;
+}
+
+.page-02 {
+  text-transform: uppercase;
+  transition: all 0.35s linear;
+  height: 100vh;
+  color: #fff;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 50px;
+}
+
+.page-02 h1 {
+  margin: 0;
+}
+
+.text-clip {
+  /* font-size: 10em; */
+  font-size: clamp(8em, 10rem, 12em);
+  font-weight: 900;
+  background-size: cover;
+  background-image: url("../public/1.webp");
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-attachment: fixed;
+  transition: all 0.35s linear;
+}
+
+.horizontal-scroll-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vh;
+  transform: rotate(-90deg) translate3d(0, -100vh, 0);
+  transform-origin: right top;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 0;
+  height: 110vw;
+  perspective: 1px;
+  transform-style: preserve-3d;
+  padding-bottom: 10rem;
+}
+
+.btn {
+  background-color: #000;
+  border: none;
+  color: white;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: 600;
+  width: 250px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.ocean-1,
+.main .ocean-1 {
+  background-image: url("../public/7.webp");
+  background-position: 101% 78%;
+  /* background-color: transparent;/ */
+  /* backdrop-filter: blur(5px); */
+}
+
+.ocean-text1 {
+  display: inline-block;
+  white-space: nowrap;
+  font-size: 65vh;
+  text-transform: uppercase;
+  font-weight: 900;
+  position: relative;
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-stroke: 0.3px black;
+  background-position: calc(0% + (-100% * var(--percentage)));
+  transform: translateX(calc(75% + (-205% * var(--percentage) / 1.5)));
+  background-image: url(/src/assets/public/1.webp);
+}
+
+.swiper-container {
+  /* make whole page */
+  width: 100vw;
+  height: 100vh;
+}
+
+.swiper-wrapper {
+  padding-inline-start: 0;
+}
+
+/* slides */
+.swiper-wrapper > * {
+  /* colors */
+  background: hsl(348, 83%, 47%);
+  color: white;
+
+  /* text layout */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

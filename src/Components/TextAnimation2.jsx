@@ -7,9 +7,9 @@ const testAnim = [
     end: 400,
     properties: [
       {
-        startValue: 0,
-        endValue: 1,
-        property: "opacity",
+        startValue: 10,
+        endValue: 112,
+        property: "fontSize",
       },
     ],
   },

@@ -5,80 +5,38 @@ import styles from "../assets/styles/Home.module.css";
 import "animate.css";
 
 export default function TextAnimation() {
-  const [isVisible, setIsVisible] = useState(false);
-  const sectionRef = useRef(null);
-  const timeoutRef = useRef(null);
+  const myElementRef = useRef(null);
+  const [isElementVisible, setIsElementVisible] = useState(false);
 
   useEffect(() => {
-    const observertext = new window.IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("showtext");
-          if (timeoutRef.current) {
-            clearTimeout(timeoutRef.current);
-          }
-          timeoutRef.current = setTimeout(() => {
-            setIsVisible(true);
-          }, 5000);
-        } else {
-          if (timeoutRef.current) {
-            clearTimeout(timeoutRef.current);
-          }
-        }
-      });
-    });
-    observertext.observe(sectionRef.current);
-
+    const section = document.querySelector(".textos");
     const observer = new IntersectionObserver((entries) => {
       if (entries[0].isIntersecting) {
-        sectionRef.current.classList.add(
-          "animate__animated",
-          "animate__fadeInUp"
-        );
+        setIsElementVisible(true);
       } else {
-        sectionRef.current.classList.remove(
-          "animate__animated",
-          "animate__fadeInUp"
-        );
+        setIsElementVisible(false);
       }
     });
-    observer.observe(sectionRef.current);
+    observer.observe(section);
 
     return () => {
       observer.disconnect();
     };
   }, []);
 
-  // console.log(isVisible);
+  console.log(isElementVisible);
   return (
     <>
-      <div className="textos" ref={sectionRef}>
-        {isVisible === false ? (
-          <h1>
-            THE OCEANS <br /> NEED YOUR <br /> HELP
-          </h1>
-        ) : (
-          <div className="">
-            <section className="textSection animate__animated animate__fadeInUpBig">
-              <TextAnimation2 />
-            </section>
-            {/* <section className="textSection animate__animated animate__fadeInUpBig">
-              <Parallax
-                strength={500}
-                renderLayer={(percentage) => (
-                  <div
-                    className="textClip"
-                    style={{
-                      backgroundPositionY: percentage * 220,
-                    }}
-                  >
-                    SCROLL
-                  </div>
-                )}
-              ></Parallax>
-            </section> */}
-          </div>
-        )}
+      <div className="textos">
+        <h1
+          className={
+            isElementVisible == true
+              ? "animate__animated animate__fadeInRightBig"
+              : null
+          }
+        >
+          THE OCEANS <br /> NEED YOUR <br /> HELP
+        </h1>
       </div>
     </>
   );

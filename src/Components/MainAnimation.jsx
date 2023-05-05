@@ -1,5 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
+// import HorizontalScroll from "react-scroll-horizontal";
+
 // import "animate.css";
 export default function MainAnimation(props) {
   const [displayText, setDisplayText] = useState("Stop");
@@ -11,7 +13,49 @@ export default function MainAnimation(props) {
 
   const [data, setData] = useState(1);
   const ref = useRef(null);
+  const sectionRef = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
+
+  const [isFixed, setIsFixed] = useState(false);
+
+  const [isSectionInView, setIsSectionInView] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScrolling);
+    return () => {
+      window.removeEventListener("scroll", handleScrolling);
+    };
+  }, []);
+
+  const handleScrolling = () => {
+    if (sectionRef.current) {
+      const sectionRect = sectionRef.current.getBoundingClientRect();
+      const sectionTop = sectionRect.top;
+      const sectionBottom = sectionRect.bottom;
+      const viewportHeight = window.innerHeight;
+      const isIntersectingFromTop =
+        sectionTop >= 0 && sectionTop < viewportHeight;
+      const isIntersectingFromBottom =
+        sectionBottom > 0 && sectionBottom <= viewportHeight;
+      const isSectionInViewNow =
+        isIntersectingFromTop || isIntersectingFromBottom;
+      setIsSectionInView(isSectionInViewNow);
+    }
+  };
+
+  useEffect(() => {
+    if (isSectionInView) {
+      document.body.classList.add("my-class");
+    } else {
+      document.body.classList.remove("my-class");
+    }
+  }, [isSectionInView]);
+
+  useEffect(() => {
+    if (props.data === 3) {
+      document.body.classList.remove("fixed");
+    }
+  }, [props.data]);
 
   const setNumber = props.setNumber;
 
@@ -46,27 +90,6 @@ export default function MainAnimation(props) {
     console.log("scene number : ", props.data);
   }, [props.data]);
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-        }
-      },
-      { threshold: 0.5 }
-    );
-
-    if (ref.current) {
-      observer.observe(ref.current);
-    }
-
-    return () => {
-      if (ref.current) {
-        observer.unobserve(ref.current);
-      }
-    };
-  }, []);
-
   const handleScroll = (e) => {
     const delta = e.deltaY;
     setScrollDistance(scrollDistance + Math.abs(delta));
@@ -94,8 +117,10 @@ export default function MainAnimation(props) {
   };
 
   return (
+    // <HorizontalScroll>
     <div
-      className={`main ${isVisible ? "mainVisible" : null}`}
+      // className={`main ${isVisible ? "mainVisible" : null}`}
+      className="main mainVisible"
       ref={ref}
       onWheel={handleScroll}
     >
@@ -357,7 +382,7 @@ export default function MainAnimation(props) {
               <br />
               <br />
               <br />
-              <span>
+              <span ref={sectionRef}>
                 <a className="link">
                   <b>
                     LEARN MORE{" "}
@@ -430,5 +455,6 @@ export default function MainAnimation(props) {
         </div>
       </main>
     </div>
+    // </HorizontalScroll>
   );
 }
