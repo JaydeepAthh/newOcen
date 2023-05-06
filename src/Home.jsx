@@ -223,16 +223,16 @@ function Home() {
               strength={500}
               style={{ height: "680px", backgroundColor: "white" }}
             > */}
-          <DonerAndMint />
           {/* </Parallax> */}
           {/* </div> */}
-
-          {/* <Parallax bgImage={bg} strength={500}> */}
-          <Team />
-          {/* </Parallax> */}
-          {/* <Parallax bgImage={bg} strength={500}> */}
           <Roadmap data={number2} setNumber={setNumber2} />
           <Roadmap2 data={number2} setNumber={setNumber2} />
+          {/* <Parallax bgImage={bg} strength={500}> */}
+          <Team />
+          <DonerAndMint />
+          {/* </Parallax> */}
+          {/* <Parallax bgImage={bg} strength={500}> */}
+
           {/* </Parallax> */}
           {/* <Parallax bgImage={bg} strength={500}> */}
           <Footer />

@@ -25,7 +25,6 @@ const DonerAndMint = () => {
           end: "1000 top",
           scrub: 1,
           pin: true,
-
           // horizontal: true,
         },
       }
