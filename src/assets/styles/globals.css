@@ -971,7 +971,7 @@ nav.nav-button {
 }
 
 .team_details .img {
-  width: 100% !important;
+  width: 475px !important;
   height: 475px !important;
 }
 
@@ -1100,7 +1100,7 @@ nav.nav-button {
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
-  width: 100vw;
+  width: 98.7vw;
   height: 100vh;
   background-image: url("../public/4.webp");
   /*  */
