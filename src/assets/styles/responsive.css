@@ -103,13 +103,26 @@
     margin-top: 100px;
   }
 
+  .footer {
+    align-items: center;
+  }
+
   .theteam {
-    top: -240px;
+    /* top: -240px; */
   }
 
   .main .roadmap,
   .main .roadmap {
     background-image: url("../public/roadmap-small.png");
+  }
+
+  .footerInner {
+    display: block;
+    text-align: center;
+  }
+
+  .footerInner h2 {
+    padding-bottom: 25px;
   }
 
   /* .main .roadmap-text1 {
@@ -218,8 +231,9 @@
   }
 
   .main .hero .heading {
-    right: 30px;
-    top: 20px;
+    right: 100px;
+    top: 100px;
+    font-size: 4vw !important;
   }
 
   .main .roadmap-text1 {
@@ -229,6 +243,7 @@
 
   .main .roadmap-bottom .cards {
     width: 100%;
+    top: 150px;
   }
 
   .mint h1 {
@@ -243,4 +258,19 @@
     top: -760px;
     left: 9.75vw !important;
   }
+
+  .main .right-content>.layer>.heading,
+  .main .right-content>.layer>.paragraph {
+    font-size: 0.8rem;
+  }
+
+  .roadmap-bottom .cards .card .paragraph {
+    font-size: 15px;
+    line-height: normal;
+  }
+
+  .pin-spacer {
+    height: 1630px !important;
+  }
+
 }

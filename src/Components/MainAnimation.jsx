@@ -249,32 +249,29 @@ export default function MainAnimation(props) {
         <div className="left-content">
           <div className="layer" data-scene={1}>
             <div className="fact subtitle">
-              By{" "}
-              <span>
-                <b>2050</b>
-              </span>
+              By<b> 2050 </b>
               there will be more
             </div>
-            <div className="fact number">
+            <div className="fact ">
               plastic in the ocean than
-              <span>
-                <b>FISH</b>
-              </span>
-              <br />
-              in the sea.
+              {/* <span> */}
+              <b> FISH </b>
+              {/* </span> */}
+              {/* <br /> */}
+              in the sea
             </div>
             <div className="fact description">and is 10m deep</div>
           </div>
           <div className="layer" data-scene={2}>
             <div className="fact subtitle">More than</div>
-            <div className="fact number">
+            <div className="fact ">
               <span>1 000 000</span>
             </div>
             <div className="fact description">
               marine animals die every year due to plastic pollution and over
-              <span>
-                <b>700</b>
-              </span>
+              {/* <span> */}
+              <b> 700 </b>
+              {/* </span> */}
               <br />
               <span>
                 <b>species</b>
@@ -285,26 +282,25 @@ export default function MainAnimation(props) {
             </div>
           </div>
           <div className="layer" data-scene={3}>
-            <div className="fact subtitle">GLOBALLY</div>
-            <div className="fact number">
-              <span>
+            <div className="fact ">
+              {/* <span>GLOBALLY</span> */}
+              <div className="fact subtitle">
                 <b>GLOBALLY</b>
-              </span>
-              pieces of plastic
+              </div>
+              pieces of plastic <br /> enter the oceans daily.
             </div>
-            <div className="fact description">enter the oceans daily.</div>
+            {/* <div className="fact description"></div> */}
           </div>
           <div className="layer" data-scene={4}>
             <div className="fact subtitle">
-              There’s an{" "}
-              <span>
-                <b>ISLAND</b>
-              </span>{" "}
+              There’s an {/* <span> */}
+              <b> ISLAND </b>
+              {/* </span>{" "} */}
               <small>
                 <b>of trash</b>
               </small>
             </div>
-            <div className="fact number">
+            <div className="fact ">
               <span>1 600 0000 km2</span>
             </div>
             <div className="fact description">

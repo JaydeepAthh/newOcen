@@ -7,6 +7,7 @@ export default function Footer() {
       <Accordion />
       <div style={{ position: "absolute", bottom: "5vh", width: "100%" }}>
         <div
+          className="footerInner"
           style={{
             display: "flex",
             alignItems: "center",

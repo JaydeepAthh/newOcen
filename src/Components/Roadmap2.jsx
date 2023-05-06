@@ -77,6 +77,7 @@ export default function Roadmap2(props) {
       ref={ref}
       id="roadmap"
       onWheel={handleScroll}
+      style={{ background: "white" }}
     >
       <input type="radio" id="scene-5" defaultValue={5} checked={checked1} />
       <input type="radio" id="scene-6" defaultValue={6} checked={checked2} />
