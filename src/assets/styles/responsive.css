@@ -115,6 +115,9 @@
   .main .roadmap,
   .main .roadmap {
     background-image: url("../public/roadmap-small.png");
+    background-position: 27% 138%;
+    background-size: auto;
+
   }
 
   .footerInner {
@@ -192,6 +195,7 @@
   .textos {
     background-size: cover;
     height: 60vh;
+    width: 100vw;
   }
 
   .textos h1 {
@@ -260,7 +264,7 @@
   }
 
   .theteam {
-    top: -160px;
+    top: -0;
     left: 9.75vw !important;
   }
 
@@ -276,6 +280,10 @@
 
   .pin-spacer {
     height: 1630px !important;
+  }
+
+  .main .ocean-text2 {
+    transform: translateX(calc(100% + (-210% * var(--percentage) / 1.5)));
   }
 
 }
