@@ -5,6 +5,7 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 const DonerAndMint = () => {
   const sectionRef = useRef(null);
   const triggerRef = useRef(null);
+  const pinRef = useRef(null);
 
   gsap.registerPlugin(ScrollTrigger);
 
@@ -24,12 +25,18 @@ const DonerAndMint = () => {
           end: "1000 top",
           scrub: 1,
           pin: true,
+
           // horizontal: true,
         },
       }
     );
+    pinRef.current = pin;
+
     return () => {
-      pin.kill();
+      if (pinRef.current) {
+        pinRef.current.scrollTrigger.disable();
+        pinRef.current.kill();
+      }
     };
   });
 

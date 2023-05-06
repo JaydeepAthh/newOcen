@@ -40,7 +40,7 @@ export default function Main(props) {
     setScrollDistance(scrollDistance + Math.abs(delta));
 
     if (scrollDistance >= 5 * 180) {
-      if (delta > 0 && data < 3) {
+      if (delta > 0 && data < 2) {
         setNumber(data + 1);
       } else if (delta < 0 && data > 0) {
         setNumber(data - 1);
@@ -74,7 +74,7 @@ export default function Main(props) {
   return (
     <div
       className="main mainVisible nonResRoadMap"
-      ref={ref}
+      // ref={ref}
       id="roadmap"
       style={{ background: "white" }}
       onWheel={handleScroll}
