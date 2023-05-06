@@ -237,8 +237,7 @@
 
   .main .roadmap-text1 {
     transform: translateX(calc(340% + (-260% * var(--percentage) / 1)));
-        font-size: 30vh;
-          margin-top: 135px;
+
   }
 
   .main .hero .heading {
@@ -284,10 +283,19 @@
     height: 1630px !important;
   }
 
+  .main .ocean-text1 {
+    font-size: 30vh;
+    margin-top: 135px;
+  }
+
   .main .ocean-text2 {
     transform: translateX(calc(100% + (-210% * var(--percentage) / 1.5)));
     font-size: 30vh;
     margin-top: 135px;
+  }
+
+  .main .hero .button {
+    margin-top: 55vh;
   }
 
 }
