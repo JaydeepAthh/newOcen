@@ -727,10 +727,13 @@ nav.nav-button {
 .main input[value="4"]:checked~* .-next .nav-toggle:not([for="scene-5"]),
 .main input[value="5"]:checked~* .-next .nav-toggle:not([for="scene-6"]),
 .main input[value="6"]:checked~* .-next .nav-toggle:not([for="scene-1"]),
+
+.main input[value="6"]:checked~* .-prev .nav-toggle:not([for="scene-5"]),
 .main input[value="5"]:checked~* .-prev .nav-toggle:not([for="scene-4"]),
-.main input[value="2"]:checked~* .-prev .nav-toggle:not([for="scene-1"]),
+.main input[value="4"]:checked~* .-prev .nav-toggle:not([for="scene-3"]),
 .main input[value="3"]:checked~* .-prev .nav-toggle:not([for="scene-2"]),
-.main input[value="4"]:checked~* .-prev .nav-toggle:not([for="scene-3"]) .main input[value="6"]:checked~* .-prev .nav-toggle:not([for="scene-5"]) .main input[value="1"]:checked~* .-prev .nav-toggle:not([for="scene-6"]) {
+.main input[value="2"]:checked~* .-prev .nav-toggle:not([for="scene-1"]),
+.main input[value="1"]:checked~* .-prev .nav-toggle:not([for="scene-6"]) {
   transform: translateX(100%);
   z-index: 3;
   transition-delay: 0.5s !important;

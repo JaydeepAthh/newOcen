@@ -21,10 +21,6 @@ export default function Main(props) {
       setChecked1(false);
       setChecked2(true);
       // setChecked3(false);
-    } else if (data === 2) {
-      setChecked1(false);
-      setChecked2(false);
-      // setChecked3(true);
     }
   };
 

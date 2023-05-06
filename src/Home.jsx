@@ -228,8 +228,8 @@ function Home() {
           <Roadmap data={number2} setNumber={setNumber2} />
           <Roadmap2 data={number2} setNumber={setNumber2} />
           {/* <Parallax bgImage={bg} strength={500}> */}
-          <Team />
           <DonerAndMint />
+          <Team />
           {/* </Parallax> */}
           {/* <Parallax bgImage={bg} strength={500}> */}
 
