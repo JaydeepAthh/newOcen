@@ -1441,6 +1441,10 @@ nav.nav-button {
   margin-left: 250px;
 }
 
+.pin-spacer {
+  height: 1717px !important;
+}
+
 .conditionalWrapper {
   display: flex;
   align-items: center;
