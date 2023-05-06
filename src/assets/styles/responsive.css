@@ -35,8 +35,8 @@
   }
 
   .HeroHeader .showtext {
-    font-size: 21vw;
-    line-height: 21vw;
+    font-size: 15vw;
+    line-height: 15vw;
   }
 
   .main .ocean-text1 {
@@ -49,7 +49,8 @@
 
   .textos {
     background-size: cover;
-    height: 60vh;
+    height: 100vh;
+    width: 97.5vw;
   }
 
   .textos h1 {
@@ -117,12 +118,16 @@
   }
 
   .footerInner {
-    display: block;
-    text-align: center;
+    display: block !important;
+    text-align: center !important;
   }
 
   .footerInner h2 {
     padding-bottom: 25px;
+  }
+
+  .footerIcon {
+    justify-content: center !important;
   }
 
   /* .main .roadmap-text1 {

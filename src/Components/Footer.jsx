@@ -21,7 +21,10 @@ export default function Footer() {
               Original design by, http://tubikstudio.com
             </p> */}
           </div>
-          <div style={{ display: "flex", gap: "22px", fontSize: "30px" }}>
+          <div
+            className="footerIcon"
+            style={{ display: "flex", gap: "22px", fontSize: "30px" }}
+          >
             <FaDiscord />
             <FaFacebook />
             <FaTwitterSquare />

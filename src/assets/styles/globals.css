@@ -239,6 +239,7 @@ a {
 .mainVisible {
   opacity: 1;
   transform: translateY(0);
+  cursor: pointer;
 }
 
 .main #site {
@@ -396,7 +397,7 @@ a {
 .main .roadmap,
 .main .roadmap {
   background-image: url("../public/roadmap-big.png");
-  background-position: 81% 78%;
+  background-position: 81% 180%;
   background-size: cover;
 }
 

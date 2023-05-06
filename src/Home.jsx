@@ -32,7 +32,7 @@ const loaderStyles = {
   animationIterationCount: "infinite",
   animationDirection: "normal",
   animationTimingFunction: "cubic-bezier(0.4, 0, 0.2, 1)",
-  animationDelay: "1.5s",
+  animationDelay: "0.8s",
   backgroundColor: "white",
   width: "80vw",
 };
@@ -178,7 +178,7 @@ function Home() {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 3000);
+    }, 2100);
 
     // document.addEventListener("DOMMouseScroll", handleWheel, false);
     // document.addEventListener("mousewheel", handleWheel, true);
