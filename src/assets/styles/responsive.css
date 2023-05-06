@@ -249,6 +249,7 @@
   .main .roadmap-text1 {
     font-size: 22vh;
     margin-top: 340px;
+    bottom: 25px;
   }
 
   .main .roadmap-bottom .cards {
