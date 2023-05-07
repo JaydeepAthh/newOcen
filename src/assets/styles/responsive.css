@@ -278,7 +278,7 @@
 
   .roadmap-bottom .cards .card .paragraph {
     font-size: 10px;
-    line-height: normal;
+    line-height: 10px;
   }
 
   .pin-spacer {
