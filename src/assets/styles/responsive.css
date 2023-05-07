@@ -299,4 +299,9 @@
     margin-top: 55vh;
   }
 
+  .main .slide-nav {
+    bottom: 77px;
+    right: -86px;
+  }
+
 }
