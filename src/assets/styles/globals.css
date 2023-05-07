@@ -951,9 +951,10 @@ nav.nav-button {
 } */
 
 .team {
-  height: 100vh;
+  height: 110vh;
   padding-top: 5vh;
   background-color: rgb(243, 243, 243);
+  top: -20px;
 }
 
 .theteam {
@@ -1313,6 +1314,7 @@ nav.nav-button {
   padding: 10vw;
   padding-top: 10vh;
   overflow-y: scroll;
+  top: -20px;
 }
 
 .footer h1 {
@@ -1641,6 +1643,7 @@ nav.nav-button {
 
 .mainHome {
   background: url("../public/ocean1.png");
+  height: 1500px;
   /* background: url("../public/1.webp"); */
   /* background-size: cover; */
 }
