@@ -1532,13 +1532,6 @@ nav.nav-button {
     display: none;
   }
 
-  /* .main .ocean-text {
-    display: none;
-  } */
-
-  /* .main p {
-    display: none;
-  } */
 
   .main .heading h1 {
     font-size: 5vw;
@@ -1587,7 +1580,7 @@ nav.nav-button {
   }
 
   .accordion .title {
-    height: 8vh;
+    height: auto;
   }
 
   .accordion .title-text {
