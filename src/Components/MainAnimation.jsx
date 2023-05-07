@@ -337,11 +337,12 @@ export default function MainAnimation(props) {
               className="nav-button -next"
               onClick={data < 3 ? () => setNumber(data + 1) : null}
             >
-              Next &gt;
+              <p>Next &gt;</p>
+
               {/* {/* <label className="nav-toggle" htmlFor="scene-1">
                   1
                 </label> */}
-              <label className="nav-toggle" htmlFor="scene-2">
+              {/* <label className="nav-toggle" htmlFor="scene-2">
                 2
               </label>
               <label className="nav-toggle" htmlFor="scene-3">
@@ -349,7 +350,7 @@ export default function MainAnimation(props) {
               </label>
               <label className="nav-toggle" htmlFor="scene-4">
                 4
-              </label>
+              </label> */}
             </div>
             <div className="nav-button content">
               <div className="layer" data-scene={1}>
