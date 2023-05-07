@@ -154,6 +154,7 @@
 
   .team .details {
     width: 100%;
+    height: auto;
   }
 
   .team_details .img {
@@ -300,8 +301,8 @@
   }
 
   .main .slide-nav {
-    bottom: 77px;
-    right: -86px;
+    bottom: 47px;
+    right: -32px;
   }
 
 }
