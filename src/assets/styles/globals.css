@@ -957,22 +957,23 @@ nav.nav-button {
 }
 
 .theteam {
-  left: 60.75vw !important;
+  left: 63.75vw !important;
 }
 
 .team .team_details {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   /* flex-direction: row; */
   margin-left: 10vw;
   margin-right: 10vw;
+  margin-top: 110px;
   gap: 60px;
 }
 
 .team_details .img {
-  width: 475px !important;
-  height: 475px !important;
+  width: 400px !important;
+  height: 400px !important;
 }
 
 .team .image {
@@ -982,7 +983,7 @@ nav.nav-button {
 
 .team .details {
   width: 54vw;
-  height: 80vh;
+  height: 70vh;
   display: flex;
   flex-direction: column;
   gap: 30px;
