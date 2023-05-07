@@ -671,7 +671,7 @@ nav.nav-button {
 
 .main .nav-button {
   display: inline-block;
-  padding: 0.5em 1em;
+  padding: 1.5em 1em;
   background: #f9fbfb;
   cursor: pointer;
   -webkit-user-select: none;
