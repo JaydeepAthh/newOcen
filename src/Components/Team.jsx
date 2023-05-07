@@ -114,7 +114,7 @@ export default function Team() {
               </p>
             </div>
             <div>
-              <h1 className="number">04</h1>
+              <h1 className="number">05</h1>
               <img className="img" src={member4} alt="member4" />
             </div>
           </div>
@@ -132,7 +132,7 @@ export default function Team() {
               </p>
             </div>
             <div>
-              <h1 className="number">05</h1>
+              <h1 className="number">06</h1>
               <img className="img" src={member5} alt="member5" />
             </div>
           </div>
