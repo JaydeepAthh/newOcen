@@ -277,7 +277,7 @@
   }
 
   .roadmap-bottom .cards .card .paragraph {
-    font-size: 15px;
+    font-size: 10px;
     line-height: normal;
   }
 
@@ -316,5 +316,16 @@
   .team .team_details {
     gap: 15px;
   }
+
+  .main .cards .card .heading {
+    font-size: 25px;
+  }
+
+  .main .roadmap,
+  .main .roadmap {
+    background-size: cover;
+    height: 1000px !important;
+  }
+
 
 }
