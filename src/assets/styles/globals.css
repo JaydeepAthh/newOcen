@@ -1007,7 +1007,7 @@ nav.nav-button {
 
 .team .nav-button {
   display: inline-block;
-  padding: 0.5em 1em;
+  padding: 1.3em 2 em;
   background: #f9fbfb;
   cursor: pointer;
   -webkit-user-select: none;
@@ -1606,6 +1606,20 @@ nav.nav-button {
   width: 250px;
   text-align: center;
   text-transform: uppercase;
+}
+
+.mintBtn {
+  height: 60px;
+  width: 250px;
+  background: #000;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  padding: 15px 25px;
 }
 
 .horizontal-section {

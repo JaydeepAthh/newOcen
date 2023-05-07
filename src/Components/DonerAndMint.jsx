@@ -55,7 +55,7 @@ const DonerAndMint = () => {
                   <h1 className="nowrap">GLOBAL FISHERIES</h1>
                 </div>
                 <div className="mint_container ">
-                  <button className="btn">MINT</button>
+                  <button className="mintBtn">MINT</button>
                   <p className="mint_text">
                     We at the Frosty Narwhals care about the environment. From
                     monthly donations, to beach clean ups, the Frosty Narwhals
@@ -78,7 +78,7 @@ const DonerAndMint = () => {
                   <h1 className=" nowrap ">PROJECTS THAT CARE</h1>
                 </div>
                 <div className="mint_container">
-                  <button className="btn">Donate</button>
+                  <button className="mintBtn">Donate</button>
                   <p className="mint_text">
                     We at the Frosty Narwhals care about the environment. From
                     monthly donations, to beach clean ups, the Frosty Narwhals
