@@ -1,3 +1,14 @@
+@media only screen and (max-width:1440px) {
+  .team_details .img {
+    width: 377px !important;
+    height: 377px !important;
+  }
+
+  .theteam {
+    margin-top: 15px;
+  }
+}
+
 @media only screen and (max-width: 1300px) {
   .mintBuyCon {
     width: 80%;
@@ -304,7 +315,7 @@
 
   .main .slide-nav {
     bottom: 38px;
-    right: -32px;
+    right: -116px;
   }
 
   .team .details p {
