@@ -874,6 +874,7 @@ nav.nav-button {
   color: black;
   margin: 0;
   margin-right: 45vw;
+  font-family: 'Poppins', sans-serif !important;
 }
 
 .header .box {
