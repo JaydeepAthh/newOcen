@@ -171,6 +171,11 @@
     padding: 25px;
   }
 
+  .slide-road {
+    bottom: 38px !important;
+    right: 0px !important;
+  }
+
   .team .details {
     width: 100%;
     height: auto;
@@ -279,8 +284,20 @@
     line-height: normal
   }
 
+  .header {
+    display: flex;
+    justify-content: normal;
+    padding: 10px 0px 10px 0px;
+    margin: 10px;
+  }
+
   .team {
     height: auto;
+    top: 0;
+  }
+
+  .footer {
+    top: 0;
   }
 
   .theteam {

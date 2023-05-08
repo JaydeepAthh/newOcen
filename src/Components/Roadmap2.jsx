@@ -145,19 +145,19 @@ export default function Roadmap2(props) {
         </div>
 
         <div className="right-content">
-          <nav className="slide-nav">
-            <div
+          <nav className="slide-nav slide-road">
+            <button
               className="nav-button -prev"
               onClick={() => setNumber(data - 1)}
             >
               &lt;
-            </div>
-            <div
+            </button>
+            <button
               className="nav-button -next"
               onClick={() => setNumber(data + 1)}
             >
               Next &gt;
-            </div>
+            </button>
             <div className="nav-button content">
               <div className="layer2" data-scene={5}>
                 <p className="heading">ROADMAP</p>
