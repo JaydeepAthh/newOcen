@@ -683,6 +683,7 @@ nav.nav-button {
   text-transform: uppercase;
   overflow: hidden;
   color: #8caab7;
+  border: none;
 }
 
 .main .nav-button.-next {
@@ -708,10 +709,10 @@ nav.nav-button {
   font-weight: 800;
 }
 
-.main .nav-button .nav-toggle {
-  /* position: absolute;
+/* .main .nav-button .nav-toggle {
+  position: absolute;
   top: 0;
-  left: 0; */
+  left: 0;
   width: 100%;
   height: 100%;
   cursor: pointer;
@@ -719,7 +720,7 @@ nav.nav-button {
   transform: translateX(0);
   transition: transform 0.5s linear 0s;
   z-index: 1;
-}
+} */
 
 .main input[value="1"]:checked~* .-next .nav-toggle:not([for="scene-2"]),
 .main input[value="2"]:checked~* .-next .nav-toggle:not([for="scene-3"]),

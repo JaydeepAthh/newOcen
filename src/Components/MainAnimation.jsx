@@ -315,43 +315,18 @@ export default function MainAnimation(props) {
         </div>
         <div className="right-content">
           <nav className="slide-nav">
-            <div
+            <button
               className="nav-button -prev"
               onClick={data > 0 ? () => setNumber(data - 1) : null}
             >
               &lt;
-              {/* <label className="nav-toggle" htmlFor="scene-1">
-                  1
-                </label>
-                <label className="nav-toggle" htmlFor="scene-2">
-                  2
-                </label>
-                <label className="nav-toggle" htmlFor="scene-3">
-                  3
-                </label>
-                <label className="nav-toggle" htmlFor="scene-4">
-                  4
-                </label> */}
-            </div>
-            <div
+            </button>
+            <button
               className="nav-button -next"
               onClick={data < 3 ? () => setNumber(data + 1) : null}
             >
-              <p>Next &gt;</p>
-
-              {/* {/* <label className="nav-toggle" htmlFor="scene-1">
-                  1
-                </label> */}
-              {/* <label className="nav-toggle" htmlFor="scene-2">
-                2
-              </label>
-              <label className="nav-toggle" htmlFor="scene-3">
-                3
-              </label>
-              <label className="nav-toggle" htmlFor="scene-4">
-                4
-              </label> */}
-            </div>
+              Next &gt;
+            </button>
             <div className="nav-button content">
               <div className="layer" data-scene={1}>
                 <p className="heading">A GLOBAL CRISIS</p>
