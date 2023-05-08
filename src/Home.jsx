@@ -7,6 +7,8 @@ import viteLogo from "/vite.svg";
 import bg from "./assets/public/1.webp";
 import bg4 from "./assets/public/4.webp";
 import bg7 from "./assets/public/7.webp";
+import { UseEffectScroll } from "react-use-smooth-scroll";
+
 import Loader from "./Components/Loader";
 import { Parallax, Background } from "react-parallax";
 // import { Parallax, ParallaxLayer } from "@react-spring/parallax";
@@ -193,51 +195,53 @@ function Home() {
           </div>
         </div>
       ) : (
-        <div className="mainHome">
-          <Header />
-          {/* <Parallax strength={10}> */}
-          <div>
-            <HeroHeader />
-          </div>
-          {/* <PageAnimPage /> */}
-          {/* </Parallax> */}
-
-          {/* <Parallax strength={500} horizontal={true}> */}
-          {/* <div className="horizontal-container"> */}
-          <MainAnimation data={number} setNumber={setNumber} />
-          {/* </div> */}
-          {/* </Parallax> */}
-
-          <div className="biggerTextos bg-white">
-            {/* <Parallax style={{ backgroundColor: "white" }} strength={500}> */}
-            <TextAnimation />
+        <UseEffectScroll>
+          <div className="mainHome">
+            <Header />
+            {/* <Parallax strength={10}> */}
+            <div>
+              <HeroHeader />
+            </div>
+            {/* <PageAnimPage /> */}
             {/* </Parallax> */}
-          </div>
 
-          {/* <Parallax bgImage={bg} strength={500}> */}
-          <Page02 />
-          {/* </Parallax> */}
+            {/* <Parallax strength={500} horizontal={true}> */}
+            {/* <div className="horizontal-container"> */}
+            <MainAnimation data={number} setNumber={setNumber} />
+            {/* </div> */}
+            {/* </Parallax> */}
 
-          {/* <div className="donerMintTry"> */}
-          {/* <Parallax
+            <div className="biggerTextos bg-white">
+              {/* <Parallax style={{ backgroundColor: "white" }} strength={500}> */}
+              <TextAnimation />
+              {/* </Parallax> */}
+            </div>
+
+            {/* <Parallax bgImage={bg} strength={500}> */}
+            <Page02 />
+            {/* </Parallax> */}
+
+            {/* <div className="donerMintTry"> */}
+            {/* <Parallax
               strength={500}
               style={{ height: "680px", backgroundColor: "white" }}
             > */}
-          {/* </Parallax> */}
-          {/* </div> */}
-          <Roadmap data={number2} setNumber={setNumber2} />
-          <Roadmap2 data={number2} setNumber={setNumber2} />
-          {/* <Parallax bgImage={bg} strength={500}> */}
-          <DonerAndMint />
-          <Team />
-          {/* </Parallax> */}
-          {/* <Parallax bgImage={bg} strength={500}> */}
+            {/* </Parallax> */}
+            {/* </div> */}
+            <Roadmap data={number2} setNumber={setNumber2} />
+            <Roadmap2 data={number2} setNumber={setNumber2} />
+            {/* <Parallax bgImage={bg} strength={500}> */}
+            <DonerAndMint />
+            <Team />
+            {/* </Parallax> */}
+            {/* <Parallax bgImage={bg} strength={500}> */}
 
-          {/* </Parallax> */}
-          {/* <Parallax bgImage={bg} strength={500}> */}
-          <Footer />
-          {/* </Parallax> */}
-        </div>
+            {/* </Parallax> */}
+            {/* <Parallax bgImage={bg} strength={500}> */}
+            <Footer />
+            {/* </Parallax> */}
+          </div>
+        </UseEffectScroll>
       )}
     </>
   );

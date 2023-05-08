@@ -5210,6 +5210,11 @@ react-use-measure@^2.1.1:
   dependencies:
     debounce "^1.2.1"
 
+react-use-smooth-scroll@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.npmjs.org/react-use-smooth-scroll/-/react-use-smooth-scroll-1.0.0.tgz"
+  integrity sha512-PB5dqdmv4gwjvkkV649H4rSAVQvujk6yv8G+qWcjRHisltH03f4VRO6QveOECXXox5YPP+gCRALQGt3HlrUqZQ==
+
 react-zdog@>=1.0:
   version "1.0.11"
   resolved "https://registry.npmjs.org/react-zdog/-/react-zdog-1.0.11.tgz"
