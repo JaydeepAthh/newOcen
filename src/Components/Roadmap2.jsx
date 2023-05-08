@@ -151,30 +151,12 @@ export default function Roadmap2(props) {
               onClick={() => setNumber(data - 1)}
             >
               &lt;
-              <label className="nav-toggle" htmlFor="scene-5">
-                1
-              </label>
-              <label className="nav-toggle" htmlFor="scene-6">
-                2
-              </label>
-              <label className="nav-toggle" htmlFor="scene-7">
-                3
-              </label>
             </div>
             <div
               className="nav-button -next"
               onClick={() => setNumber(data + 1)}
             >
               Next &gt;
-              <label className="nav-toggle" htmlFor="scene-5">
-                1
-              </label>
-              <label className="nav-toggle" htmlFor="scene-6">
-                2
-              </label>
-              <label className="nav-toggle" htmlFor="scene-7">
-                3
-              </label>
             </div>
             <div className="nav-button content">
               <div className="layer2" data-scene={5}>
