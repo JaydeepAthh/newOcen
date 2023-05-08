@@ -1641,6 +1641,7 @@ nav.nav-button {
 
 .mainHome {
   background: url("../public/ocean1.png");
+  overflow-x: hidden;
   /* background: url("../public/1.webp"); */
   /* background-size: cover; */
 }
