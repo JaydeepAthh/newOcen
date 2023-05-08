@@ -152,6 +152,10 @@
     margin-left: 0;
   }
 
+  .page-02 {
+    padding: 25px;
+  }
+
   .team .details {
     width: 100%;
     height: auto;
@@ -210,8 +214,8 @@
   }
 
   .text-clip {
-    font-size: 14vw;
-    line-height: 16vw;
+    font-size: 13vw;
+    line-height: 13vw;
   }
 
   .page-02 {
@@ -219,11 +223,11 @@
   }
 
   .mint {
-    margin-left: 0;
+    margin-left: 20px;
   }
 
   .mint h1 {
-    font-size: 9vw;
+    font-size: 7vw;
   }
 
   .mint .mint_container {
@@ -238,8 +242,10 @@
   }
 
   .main .roadmap-text1 {
-    transform: translateX(calc(340% + (-260% * var(--percentage) / 1)));
-
+    transform: translate(calc(318% + (-236% * var(--percentage) / 1)));
+    font-size: 35vh;
+    margin-top: 340px;
+    bottom: 25px;
   }
 
   .main .hero .heading {
@@ -248,11 +254,6 @@
     font-size: 4vw !important;
   }
 
-  .main .roadmap-text1 {
-    font-size: 22vh;
-    margin-top: 340px;
-    bottom: 25px;
-  }
 
   .main .roadmap-bottom .cards {
     width: 100%;
@@ -302,7 +303,7 @@
   }
 
   .main .slide-nav {
-    bottom: 47px;
+    bottom: 38px;
     right: -32px;
   }
 
