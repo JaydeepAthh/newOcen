@@ -1026,6 +1026,7 @@ nav.nav-button {
   overflow: hidden;
   color: #214352;
   border: 0.2px solid rgb(182, 182, 182);
+  font-family: 'Poppins', sans-serif !important;
 }
 
 .team .nav-button.-next {
