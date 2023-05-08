@@ -173,7 +173,7 @@
 
   .slide-road {
     bottom: 38px !important;
-    right: 0px !important;
+    right: -26px !important;
   }
 
   .team .details {
@@ -336,7 +336,7 @@
 
   .main .slide-nav {
     bottom: 38px;
-    right: -30px;
+    right: -40px;
   }
 
   .main .content .layer .heading,
