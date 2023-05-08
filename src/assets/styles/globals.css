@@ -1375,6 +1375,7 @@ nav.nav-button {
   display: flex;
   align-items: center;
   justify-content: start;
+  font-family: 'Poppins', sans-serif !important
 }
 
 .accordion .title:hover {
@@ -1618,6 +1619,7 @@ nav.nav-button {
   justify-content: center;
   text-transform: uppercase;
   padding: 15px 25px;
+  font-family: 'Poppins', sans-serif !important;
 }
 
 .horizontal-section {
