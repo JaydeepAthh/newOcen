@@ -249,12 +249,13 @@ export default function MainAnimation(props) {
         <div className="left-content">
           <div className="layer" data-scene={1}>
             <p className="fact subtitle">
-              By <span style={{ fontWeight: "bold" }}>2050</span> there will be
-              more
+              By <h2 className="heading">2050</h2> there will be more
             </p>
             <p className="fact ">
               plastic in the ocean than
-              <span style={{ fontWeight: "bold" }}>FISH</span>
+              {/* <span> */}
+              <h2 className="heading"> FISH </h2>
+              {/* </span> */}
               {/* <br /> */}
               in the sea
             </p>
@@ -265,11 +266,8 @@ export default function MainAnimation(props) {
             <p className="fact ">1 000 000</p>
             <p className="fact description">
               marine animals die every year due to plastic pollution and over
-              <span style={{ fontWeight: "bold" }}>
-                {" "}
-                700 <br />
-                species{" "}
-              </span>
+              <h2 className="heading">700 species</h2>
+              {/* <span> */}
               {/* </span>{" "} */}
               could go extinct due
               <br />
@@ -280,8 +278,8 @@ export default function MainAnimation(props) {
             <div className="fact ">
               {/* <span>GLOBALLY</span> */}
               <p className="fact subtitle">
-                <span style={{ fontWeight: "bold" }}>GLOBALLY</span> pieces of
-                plastic <br /> enter the oceans daily.
+                <h2 className="heading">GLOBALLY</h2> pieces of plastic <br />{" "}
+                enter the oceans daily.
               </p>
             </div>
             {/* <div className="fact description"></div> */}
@@ -289,18 +287,17 @@ export default function MainAnimation(props) {
           <div className="layer" data-scene={4}>
             <p className="fact subtitle">
               There’s an {/* <span> */}
-              <span style={{ fontWeight: "bold" }}>ISLAND</span>
+              <h2 className="heading">ISLAND of trash</h2>
               {/* </span>{" "} */}
-              of trash
             </p>
             <p className="fact description">
-              1 600 0000 km2 in the pacific ocean known as
-              <span style={{ fontWeight: "bold" }}>
+              1 600 0000 km2 in the pacific ocean known as{" "}
+              <h2 className="heading">
                 {" "}
                 the great
                 <br />
                 pacific garbage patch.
-              </span>
+              </h2>
             </p>
           </div>
         </div>

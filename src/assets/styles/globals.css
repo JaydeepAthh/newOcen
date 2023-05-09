@@ -494,6 +494,10 @@ nav.nav-button {
   font-family: "Poppins", sans-serif !important;
 }
 
+.left-content .fact h2 {
+  font-size: 18px;
+}
+
 p.paragraph {
   font-family: "Poppins", sans-serif !important;
 }
