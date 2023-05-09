@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import { Link } from "react-router-dom";
 
 const DonerAndMint = () => {
   const sectionRef = useRef(null);
@@ -55,7 +56,9 @@ const DonerAndMint = () => {
                   <h1 className="nowrap">GLOBAL FISHERIES</h1>
                 </div>
                 <div className="mint_container ">
-                  <button className="mintBtn">MINT</button>
+                  <Link to="/mint-buy">
+                    <button className="mintBtn">MINT</button>
+                  </Link>
                   <p className="mint_text">
                     We at the Frosty Narwhals care about the environment. From
                     monthly donations, to beach clean ups, the Frosty Narwhals

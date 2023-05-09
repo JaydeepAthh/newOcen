@@ -4,16 +4,19 @@ import "./assets/styles/responsive.css";
 import Home from "./Home";
 import { useState, useEffect, useRef } from "react";
 import MintBuy from "./Components/MintBuy";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <>
+    <Routes>
       {/* <Header /> */}
-      <Home />
+      {/* <Home /> */}
+      <Route index path="/" element={<Home />} />
+      <Route index path="mint-buy" element={<MintBuy />} />
       {/* <Swiper /> */}
       {/* <MintBuy /> */}
       {/* <Crousal /> */}
-    </>
+    </Routes>
   );
 }
 
