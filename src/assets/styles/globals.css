@@ -1168,7 +1168,7 @@ h2.heading {
   align-items: flex-start;
   width: 99%;
   margin-left: 0.5%;
-
+  height: 100vh;
   background-image: url("../public/4.webp");
   /*  */
   background-size: 100vw 100vh;
