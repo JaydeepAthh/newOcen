@@ -266,12 +266,11 @@ export default function MainAnimation(props) {
             <p className="fact ">1 000 000</p>
             <p className="fact description">
               marine animals die every year due to plastic pollution and over
-              <h2 className="heading">700 species</h2>
+              <br />
+              <h2 className="heading">700 species </h2>
               {/* <span> */}
               {/* </span>{" "} */}
-              could go extinct due
-              <br />
-              to ocean pollution.
+              could go extinct due to ocean pollution.
             </p>
           </div>
           <div className="layer" data-scene={3}>

@@ -142,6 +142,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  cursor: pointer;
 }
 
 .sticky {
@@ -496,6 +497,7 @@ nav.nav-button {
 
 .left-content .fact h2 {
   font-size: 18px;
+  display: contents;
 }
 
 p.paragraph {
@@ -1070,7 +1072,7 @@ h2.heading {
 
 .team .nav-button {
   display: inline-block;
-  padding: 1.3em 2em;
+  padding: 0.5em 2em;
   background: #f9fbfb;
   cursor: pointer;
   -webkit-user-select: none;
@@ -1790,4 +1792,8 @@ h2.heading {
 
 .biggerTextos {
   width: 100vw;
+}
+
+.footer h1 {
+  font-family: "Poppins", sans-serif !important;
 }
