@@ -269,13 +269,11 @@ export default function MainAnimation(props) {
             </div>
             <div className="fact description">
               marine animals die every year due to plastic pollution and over
-              {/* <span> */}
-              <b> 700 </b>
-              {/* </span> */}
+              <strong>700</strong>
               <br />
-              <span>
-                <b>species</b>
-              </span>{" "}
+              {/* <span> */}
+              <strong>species</strong>
+              {/* </span>{" "} */}
               could go extinct due
               <br />
               to ocean pollution.
