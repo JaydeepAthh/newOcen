@@ -248,67 +248,53 @@ export default function MainAnimation(props) {
         <div className="bottom_text"></div>
         <div className="left-content">
           <div className="layer" data-scene={1}>
-            <div className="fact subtitle">
-              By<b> 2050 </b>
-              there will be more
-            </div>
-            <div className="fact ">
+            <p className="fact subtitle">By 2050 there will be more</p>
+            <p className="fact ">
               plastic in the ocean than
               {/* <span> */}
-              <b> FISH </b>
+              FISH
               {/* </span> */}
               {/* <br /> */}
               in the sea
-            </div>
+            </p>
             <div className="fact description">and is 10m deep</div>
           </div>
           <div className="layer" data-scene={2}>
-            <div className="fact subtitle">More than</div>
-            <div className="fact ">
-              <span>1 000 000</span>
-            </div>
-            <div className="fact description">
+            <props className="fact subtitle">More than</props>
+            <p className="fact ">1 000 000</p>
+            <p className="fact description">
               marine animals die every year due to plastic pollution and over
-              <strong>700</strong>
+              700
               <br />
               {/* <span> */}
-              <strong>species</strong>
+              species
               {/* </span>{" "} */}
               could go extinct due
               <br />
               to ocean pollution.
-            </div>
+            </p>
           </div>
           <div className="layer" data-scene={3}>
             <div className="fact ">
               {/* <span>GLOBALLY</span> */}
-              <div className="fact subtitle">
-                <b>GLOBALLY</b>
-              </div>
-              pieces of plastic <br /> enter the oceans daily.
+              <p className="fact subtitle">
+                GLOBALLY pieces of plastic <br /> enter the oceans daily.
+              </p>
             </div>
             {/* <div className="fact description"></div> */}
           </div>
           <div className="layer" data-scene={4}>
-            <div className="fact subtitle">
+            <p className="fact subtitle">
               There’s an {/* <span> */}
-              <b> ISLAND </b>
+              ISLAND
               {/* </span>{" "} */}
-              <small>
-                <b>of trash</b>
-              </small>
-            </div>
-            <div className="fact ">
-              <span>1 600 0000 km2</span>
-            </div>
-            <div className="fact description">
-              in the pacific ocean known as{" "}
-              <b>
-                the great
-                <br />
-                pacific garbage patch.
-              </b>
-            </div>
+              of trash
+            </p>
+            <p className="fact description">
+              1 600 0000 km2 in the pacific ocean known as the great
+              <br />
+              pacific garbage patch.
+            </p>
           </div>
         </div>
         <div className="right-content">
