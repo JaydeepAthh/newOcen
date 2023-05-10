@@ -3,10 +3,6 @@
     width: 377px !important;
     height: 377px !important;
   }
-
-  .theteam {
-    margin-top: 15px;
-  }
 }
 
 @media only screen and (max-width: 1300px) {
@@ -24,6 +20,9 @@
   .mintBuyCon {
     width: 95%;
     margin-left: 2.5%;
+  }
+  .theteam {
+    left: 53%;
   }
 
   .mintBuyCon .inputCon img {
@@ -114,10 +113,6 @@
 
   .footer {
     align-items: center;
-  }
-
-  .theteam {
-    /* top: -240px; */
   }
 
   .main .roadmap,
@@ -293,11 +288,6 @@
 
   .footer {
     top: 0;
-  }
-
-  .theteam {
-    top: -0;
-    left: 9.75vw !important;
   }
 
   .main .right-content > .layer > .heading,

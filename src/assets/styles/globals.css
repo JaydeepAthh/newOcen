@@ -1016,10 +1016,12 @@ h2.heading {
   top: -10px;
   padding-top: 5vh;
   background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
 }
 
 .theteam {
-  left: 63.75vw !important;
+  left: 69%;
 }
 
 .team .team_details {
@@ -1031,6 +1033,7 @@ h2.heading {
   margin-right: 10vw;
   margin-top: 110px;
   gap: 60px;
+  height: 500px;
 }
 
 .team_details .img {
