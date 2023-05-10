@@ -171,6 +171,13 @@
     height: auto;
   }
 
+  .team .team_details {
+    height: auto;
+  }
+  .theteam {
+    left: 10%;
+  }
+
   .team_details .img {
     height: 250px !important;
     width: 250px !important;
@@ -301,7 +308,7 @@
   }
 
   .pin-spacer {
-    height: 1630px !important;
+    height: 1700px !important;
   }
 
   .main .ocean-text1 {

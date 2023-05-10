@@ -28,6 +28,7 @@ export default function Team() {
     slidesToShow: 1,
     slidesToScroll: 1,
     ref: sliderRef,
+    adaptiveHeight: true,
   };
 
   return (
