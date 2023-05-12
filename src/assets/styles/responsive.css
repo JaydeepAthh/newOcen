@@ -3,6 +3,10 @@
     width: 377px !important;
     height: 377px !important;
   }
+
+  .theteam {
+    left: 64%;
+  }
 }
 
 @media only screen and (max-width: 1300px) {

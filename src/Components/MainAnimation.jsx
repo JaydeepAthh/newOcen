@@ -330,14 +330,11 @@ export default function MainAnimation(props) {
             </div>
           </nav>
           <div className="layer" data-scene={1}>
-            <h2 className="heading">
-              Its not late. Its time to save the ocean.
-            </h2>
+            <h2 className="heading">The Plastic Problem</h2>
             <p className="paragraph">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
-              accusantium est autem amet minus, atque consequatur iure dolor id
-              inventore sit magnam sint, voluptates deserunt beatae? Error
-              eveniet quam dicta!
+              With over 50 trillion plastics and microplastics in the ocean, the
+              world faces an unprecedented challenge. Plastics are being found
+              in marine life, fish, tap water, and beer.
               <br />
               <br />
               <br />
@@ -352,12 +349,11 @@ export default function MainAnimation(props) {
             </p>
           </div>
           <div className="layer" data-scene={2}>
-            <h2 className="heading">Facts and Stats on Ocean Pollution</h2>
+            <h2 className="heading">The World Needs Us</h2>
             <p className="paragraph">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Inventore, amet hic provident ipsa placeat ad. Excepturi
-              distinctio consectetur voluptatibus rem deleniti ducimus officia
-              natus, magnam aut architecto sint reprehenderit provident?
+              Now more than ever the world needs our help. From over fishing to
+              plastic pollution, and climate change, if we dont act now, soon it
+              will be too late.
               <br />
               <br />
               <br />
@@ -372,12 +368,11 @@ export default function MainAnimation(props) {
             </p>
           </div>
           <div className="layer" data-scene={3}>
-            <h2 className="heading">Learn more about how you can help.</h2>
+            <h2 className="heading">Our 2050 Vision</h2>
             <p className="paragraph">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Inventore, amet hic provident ipsa placeat ad. Excepturi
-              distinctio consectetur voluptatibus rem deleniti ducimus officia
-              natus, magnam aut architecto sint reprehenderit provident?
+              The Frosty Narwhals team has set a goal of seeing a 90% reduction
+              in Ocean plastic by the year 2050. To achieve this, the Frosty
+              Narwhals are donating a minimum of 20% to 501c3 charities.
               <br />
               <br />
               <br />
@@ -392,12 +387,12 @@ export default function MainAnimation(props) {
             </p>
           </div>
           <div className="layer" data-scene={4}>
-            <h2 className="heading">Join the fight to defend our oceans.</h2>
+            <h2 className="heading">Our 2050 Vision</h2>
             <p className="paragraph">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi
-              temporibus explicabo aspernatur dignissimos veritatis. Voluptate
-              quis quia sed totam quasi placeat, odio quam fuga consectetur
-              voluptatibus praesentium tempore vel molestiae?
+              By minting, holding, or even donating to the Frosty Narwhals,
+              you’re joining forces with us to tackle one of the biggest
+              problems humanity faces today. We cant save the world alone, but
+              we can do it together.
               <br />
               <br />
               <br />

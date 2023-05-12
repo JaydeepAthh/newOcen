@@ -100,9 +100,9 @@ export default function Roadmap2(props) {
             <div className="fact card">
               <h2 className="heading">Milestone 2</h2>
               <p className="paragraph ">
-                Frosty Narwhals relaunch allows for collaboration between
-                multiple projects to give holders hidden perks with their new
-                mints.
+                The Narwhal Creator will allow for users to customize their own
+                unique narwhal based on their wallet age, gas history, discord
+                points, and Crew3 XP.
               </p>
             </div>
           </div>
@@ -110,17 +110,17 @@ export default function Roadmap2(props) {
             <div className=" fact card">
               <h2 className="  heading">Milestone 3</h2>
               <p className=" paragraph">
-                Frosty Narwhals relaunch allows for collaboration between
-                multiple projects to give holders hidden perks with their new
-                mints.
+                The Remint Feature will allow for users to completly reroll
+                their narwhal’s traits changing the metadata permanently
+                utilizing Crew3 XP, wallet age, gas history and more.
               </p>
             </div>
             <div className="fact  card">
               <h2 className="  heading">Milestone 4</h2>
               <p className=" paragraph">
-                Frosty Narwhals relaunch allows for collaboration between
-                multiple projects to give holders hidden perks with their new
-                mints.
+                The FISH token is a native currency of the Frosty Narwhals that
+                rewards users for their efforts in ocean clean up and
+                conservation efforts
               </p>
             </div>
           </div>
@@ -128,17 +128,17 @@ export default function Roadmap2(props) {
             <div className=" fact card">
               <h2 className="  heading">Milestone 5</h2>
               <p className=" paragraph">
-                Frosty Narwhals relaunch allows for collaboration between
-                multiple projects to give holders hidden perks with their new
-                mints.
+                Frosty Narwhals Branded Whiskey is a limited edition single
+                barrel whiskey created in partnership with The Utility Co to
+                support ocean conservation efforts
               </p>
             </div>
             <div className="fact  card">
               <h2 className="  heading">Milestone 6</h2>
               <p className=" paragraph">
-                Frosty Narwhals relaunch allows for collaboration between
-                multiple projects to give holders hidden perks with their new
-                mints.
+                Frosty Narwhals tagging goes live to tag and track real world
+                narwhals to gather scientific data about sea ice, pollution,
+                noise and other environmental factors.
               </p>
             </div>
           </div>
